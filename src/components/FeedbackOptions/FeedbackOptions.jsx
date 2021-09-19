@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './fb.module.css';
 
 export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
@@ -18,4 +19,9 @@ export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
             ))}
         </ul>
     );
+};
+
+FeedbackOptions.propTypes = {
+    onLeaveFeedback: PropTypes.func,
+    options: PropTypes.object,
 };
